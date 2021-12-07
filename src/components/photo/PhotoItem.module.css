@@ -1,0 +1,56 @@
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card:hover .card_image{
+    filter: blur(4px);
+}
+
+.card:hover .card_info {
+    opacity: 1;
+    background-color: rgba(0,0,0,.5);
+}
+
+.card_image {
+    display: inline-block;
+    width: 100%;
+}
+
+.card_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+}
+
+.card_info__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info_profile__photo {
+    justify-self: center;
+}
+
+.info_profile__name {
+    margin: 0;
+}
